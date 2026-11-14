@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yashvardhan Patel — Resume</title>
 <style>
   :root{
@@ -34,10 +35,7 @@
   }
 
   /* ---------- Header ---------- */
-  .header{
-    text-align:center;
-    margin-bottom:10px;
-  }
+  .header{ text-align:center; margin-bottom:8px; }
   .name{
     font-size:29px;
     font-weight:700;
@@ -50,23 +48,15 @@
     color:var(--accent);
     font-weight:700;
     letter-spacing:0.2px;
-    margin:0 0 7px 0;
+    margin:0 0 6px 0;
   }
-  .contact-row{
-    font-size:12px;
-    color:var(--muted);
-  }
-  .contact-row a{
-    color:var(--accent);
-    text-decoration:none;
-  }
+  .contact-row{ font-size:12px; color:var(--muted); line-height:1.5; }
+  .contact-row a{ color:var(--accent); text-decoration:none; }
   .contact-row a:hover{ text-decoration:underline; }
   .dot{ color:var(--rule); margin:0 6px; }
 
   /* ---------- Section ---------- */
-  .section{
-    margin-top:13px;
-  }
+  .section{ margin-top:11px; }
   .section-title{
     font-size:13px;
     font-weight:700;
@@ -75,25 +65,19 @@
     color:var(--accent);
     border-bottom:1.3px solid var(--accent);
     padding-bottom:3px;
-    margin:0 0 7px 0;
+    margin:0 0 6px 0;
   }
+  .summary{ font-size:12px; line-height:1.4; margin:0; color:#262626; }
 
   /* ---------- Entry blocks ---------- */
-  .entry{
-    margin-bottom:8px;
-  }
+  .entry{ margin-bottom:7px; }
   .entry-row{
     display:flex;
     justify-content:space-between;
     align-items:baseline;
     gap:10px;
   }
-  .entry-title{
-    font-size:13.5px;
-    font-weight:700;
-    color:var(--ink);
-  }
-  .entry-title a{ color:var(--ink); text-decoration:none; }
+  .entry-title{ font-size:13.5px; font-weight:700; color:var(--ink); }
   .entry-sub{
     font-size:12px;
     font-style:italic;
@@ -106,33 +90,21 @@
     white-space:nowrap;
     font-style:italic;
   }
-  .links{
-    font-size:11.5px;
-    font-weight:500;
-  }
-  .links a{
-    color:var(--accent);
-    text-decoration:none;
-  }
+  .links{ font-size:11.5px; font-weight:500; }
+  .links a{ color:var(--accent); text-decoration:none; }
   .links a:hover{ text-decoration:underline; }
-  .stack{
-    font-size:11.5px;
-    color:var(--muted);
-    margin-top:1px;
-  }
+  .stack{ font-size:11.5px; color:var(--muted); margin-top:1px; }
 
-  ul.bullets{
-    margin:4px 0 0 0;
-    padding-left:17px;
-  }
+  ul.bullets{ margin:3px 0 0 0; padding-left:17px; }
   ul.bullets li{
     font-size:12px;
-    line-height:1.4;
+    line-height:1.38;
     color:#262626;
     margin-bottom:2px;
   }
+  ul.bullets li a{ color:var(--accent); text-decoration:none; }
 
-  /* ---------- Education table ---------- */
+  /* ---------- Education ---------- */
   .edu-row{
     display:flex;
     justify-content:space-between;
@@ -140,15 +112,8 @@
     gap:10px;
     margin-bottom:4px;
   }
-  .edu-left .edu-school{
-    font-size:13.5px;
-    font-weight:700;
-  }
-  .edu-left .edu-degree{
-    font-size:12px;
-    font-style:italic;
-    color:var(--muted);
-  }
+  .edu-left .edu-school{ font-size:13.5px; font-weight:700; }
+  .edu-left .edu-degree{ font-size:12px; font-style:italic; color:var(--muted); }
   .edu-right{
     text-align:right;
     font-size:12px;
@@ -157,33 +122,39 @@
   }
 
   /* ---------- Skills ---------- */
-  .skills-grid{
-    font-size:12px;
-    line-height:1.6;
-  }
-  .skills-grid .cat{
-    font-weight:700;
-    color:var(--ink);
-  }
+  .skills-grid{ font-size:12px; line-height:1.55; }
+  .skills-grid .cat{ font-weight:700; color:var(--ink); }
 
   /* ---------- Two-column bottom (POR / Extra) ---------- */
-  .two-col{
-    display:flex;
-    gap:22px;
-  }
+  .two-col{ display:flex; gap:22px; }
   .two-col .col{ flex:1; }
 
   @media print{
-    html,body{ background:var(--paper); width:100%; height:100%; }
+    html,body{ background:var(--paper); width:100%; height:auto; }
     .sheet{
       box-shadow:none;
       margin:0 auto;
       width:100%;
       max-width:100%;
       min-height:auto;
-      padding:8mm 11mm;
+      padding:7mm 11mm;
     }
     @page{ size:A4; margin:0; }
+    .name{ font-size:26px; margin-bottom:2px; }
+    .tagline{ font-size:12px; margin-bottom:4px; }
+    .contact-row{ font-size:11.5px; line-height:1.4; }
+    .header{ margin-bottom:5px; }
+    .section{ margin-top:8px; }
+    .section-title{ font-size:12.5px; padding-bottom:2px; margin-bottom:4px; }
+    .summary{ font-size:11.5px; line-height:1.33; }
+    .entry{ margin-bottom:5px; }
+    .entry-title{ font-size:13px; }
+    .entry-sub, .entry-date, .edu-left .edu-degree, .edu-right{ font-size:11.5px; }
+    .edu-left .edu-school{ font-size:13px; }
+    .edu-row{ margin-bottom:2px; }
+    ul.bullets{ margin-top:2px; }
+    ul.bullets li{ font-size:11.5px; line-height:1.32; margin-bottom:1px; }
+    .skills-grid{ font-size:11.5px; line-height:1.42; }
   }
 </style>
 </head>
@@ -195,8 +166,15 @@
     <div class="name">Yashvardhan Patel</div>
     <div class="tagline">Electronics &amp; Instrumentation Engineering · Full-Stack &amp; Applied ML</div>
     <div class="contact-row">
-      Indore, MP<span class="dot">|</span>+91 91793 37751<span class="dot">|</span><a href="mailto:yashvardhan.patel007@gmail.com">yashvardhan.patel007@gmail.com</a><span class="dot">|</span><a href="https://www.linkedin.com/in/yashvardhan-patel1710/" target="_blank">linkedin.com/in/yashvardhan-patel1710</a><span class="dot">|</span><a href="https://github.com/Yashhh-017" target="_blank">github.com/Yashhh-017</a>
+      Indore, MP<span class="dot">|</span>+91 91793 37751<span class="dot">|</span><a href="mailto:yashvardhan.patel007@gmail.com">yashvardhan.patel007@gmail.com</a><span class="dot">|</span><a href="https://www.linkedin.com/in/yashvardhan-patel1710/" target="_blank">linkedin.com/in/yashvardhan-patel1710</a><br>
+      <a href="https://github.com/Yashhh-017" target="_blank">github.com/Yashhh-017</a><span class="dot">|</span><a href="https://leetcode.com/u/warrior_177/" target="_blank">leetcode.com/u/warrior_177</a>
     </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary">Third-year Electronics &amp; Instrumentation Engineering student at SGSITS with hands-on experience shipping features to a production Next.js application, launching a MERN marketplace with 100+ transactions in its first week, and building a real-time offline speech-translation pipeline in Python. Seeking a software engineering internship.</p>
   </div>
 
   <!-- EDUCATION -->
@@ -207,7 +185,7 @@
         <div class="edu-school">Shri G. S. Institute of Technology and Science (SGSITS)</div>
         <div class="edu-degree">B.Tech, Electronics and Instrumentation Engineering — CGPA: 7.1</div>
       </div>
-      <div class="edu-right">Expected 2028<br>Indore, MP</div>
+      <div class="edu-right">Expected 2028 (3rd Year)<br>Indore, MP</div>
     </div>
     <div class="edu-row">
       <div class="edu-left">
@@ -218,16 +196,6 @@
     </div>
   </div>
 
-  <!-- ACHIEVEMENTS -->
-  <div class="section">
-    <div class="section-title">Achievements</div>
-    <ul class="bullets">
-      <li>Scored 94.8 percentile in JEE Mains 2024</li>
-      <li>Solved 200+ problems across LeetCode and Codeforces</li>
-      <li>Active participant in hackathons and competitive coding contests across platforms</li>
-    </ul>
-  </div>
-
   <!-- EXPERIENCE -->
   <div class="section">
     <div class="section-title">Experience</div>
@@ -236,12 +204,12 @@
         <div class="entry-title">Software Engineering Intern — E-Notebook-10</div>
         <div class="entry-date">May 2026 – Jul 2026</div>
       </div>
-      <div class="entry-sub">Next.js 15, React 19, Appwrite, Vercel · Indore, MP</div>
+      <div class="entry-sub">Next.js 15, React 19, Appwrite, Vercel, Git, GitHub · Indore, MP</div>
       <ul class="bullets">
-        <li>Contributed to a production-grade Next.js application by implementing new features and fixing bugs in collaboration with an open-source development team.</li>
-        <li>Developed experiment history, version control functionality, improved data integrity and user experience.</li>
-        <li>Designed and integrated Appwrite database schemas, optimized data handling workflows, and enhanced experiment management features.</li>
-        <li>Collaborated through Git, GitHub, and code reviews while following modern software engineering and Agile development practices.</li>
+        <li>Shipped new features and bug fixes in a production-grade Next.js 15 / React 19 application as part of an open-source development team.</li>
+        <li>Built experiment history and version control functionality, improving data integrity and the overall user experience.</li>
+        <li>Designed Appwrite database schemas, optimized data-handling workflows, and enhanced experiment management features.</li>
+        <li>Collaborated through Git, GitHub, and code reviews in an Agile development workflow.</li>
       </ul>
     </div>
   </div>
@@ -252,40 +220,39 @@
 
     <div class="entry">
       <div class="entry-row">
+        <div class="entry-title">EchoEdge — Real-Time Offline Hindi-to-English Speech Translation <span class="links">| <a href="https://github.com/Yashhh-017/Arm_hackathon" target="_blank">GitHub</a></span></div>
+        <div class="entry-date">Feb 2026 – Mar 2026</div>
+      </div>
+      <div class="stack">Python, Faster-Whisper, MarianMT, Arm NEON</div>
+      <ul class="bullets">
+        <li>Built a real-time, 100% offline Hindi-to-English speech translation system optimized for Arm64 using NEON acceleration.</li>
+        <li>Architected an end-to-end pipeline integrating Faster-Whisper (INT8), MarianMT, and native text-to-speech, achieving ~1.2–1.8 s latency with low CPU usage.</li>
+        <li>Designed custom Voice Activity Detection (VAD) and anti-hallucination mechanisms to improve translation accuracy and stability in conversational scenarios.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <div class="entry-title">CampusKart — Campus Marketplace Platform <span class="links">| <a href="https://github.com/Yashhh-017/Campuskart" target="_blank">Frontend</a> · <a href="https://github.com/Yashhh-017/CampusKart-backend" target="_blank">Backend</a> · <a href="https://www.campuskartz.in/" target="_blank">campuskartz.in</a></span></div>
+        <div class="entry-date">Aug 2025 – Oct 2025</div>
+      </div>
+      <div class="stack">MERN Stack — MongoDB, Express.js, React, Node.js</div>
+      <ul class="bullets">
+        <li>Built and launched a full-stack campus marketplace that drove 4,500+ views and 100+ transactions within the first week of launch.</li>
+        <li>Architected the application on the MERN stack, with efficient product listing, search, and browsing workflows.</li>
+        <li>Delivered a fully responsive user interface across devices.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
         <div class="entry-title">Morse Code Encoder &amp; Decoder <span class="links">| <a href="https://github.com/Yashhh-017/morsetree" target="_blank">GitHub</a></span></div>
         <div class="entry-date">Jan 2026 – Feb 2026</div>
       </div>
       <div class="stack">Java, Spring Boot</div>
       <ul class="bullets">
-        <li>Engineered a Morse code encoder-decoder system using Java and Spring Boot for efficient bidirectional translation.</li>
-        <li>Designed a Binary Tree-based mapping structure to optimize encoding and decoding performance.</li>
-        <li>Leveraged Data Structures and Algorithms concepts to build a scalable and efficient solution.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-row">
-        <div class="entry-title">CampusKart <span class="links">| <a href="https://github.com/Yashhh-017/Campuskart" target="_blank">Frontend</a> · <a href="https://github.com/Yashhh-017/CampusKart-backend" target="_blank">Backend</a> · <a href="https://www.campuskartz.in/" target="_blank">campuskartz.in</a></span></div>
-        <div class="entry-date">Aug 2025 – Oct 2025</div>
-      </div>
-      <div class="stack">MERN Stack — MongoDB, Express.js, React, Node.js</div>
-      <ul class="bullets">
-        <li>Engineered a campus marketplace platform driving 4,500+ views and 100+ transactions within the first week of launch.</li>
-        <li>Architected a full-stack MERN application leveraging MongoDB, Express.js, React, and Node.js.</li>
-        <li>Developed efficient product listing, search, and browsing workflows with a fully responsive UI.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-row">
-        <div class="entry-title">EchoEdge <span class="links">| <a href="https://github.com/Yashhh-017/Arm_hackathon" target="_blank">GitHub</a></span></div>
-        <div class="entry-date">Feb 2026 – Mar 2026</div>
-      </div>
-      <div class="stack">Python, Faster-Whisper, MarianMT, Arm NEON</div>
-      <ul class="bullets">
-        <li>Engineered EchoEdge, a real-time, 100% offline Hindi-to-English speech translation system optimized for Arm64 architectures using NEON acceleration.</li>
-        <li>Architected an end-to-end pipeline integrating Faster-Whisper (INT8), MarianMT, and native TTS, achieving ~1.2–1.8s latency with low CPU usage.</li>
-        <li>Designed custom Voice Activity Detection (VAD) and anti-hallucination mechanisms to improve translation accuracy and stability in conversational scenarios.</li>
+        <li>Built a Spring Boot application exposing 2 REST endpoints (encode and decode) in a layered Controller–Service–DSA architecture, with an interactive audio-visual UI.</li>
+        <li>Implemented a Morse binary tree (dot = left, dash = right), using DFS to generate codes for encoding and tree traversal for decoding.</li>
       </ul>
     </div>
   </div>
@@ -295,11 +262,21 @@
     <div class="section-title">Technical Skills</div>
     <div class="skills-grid">
       <div><span class="cat">Languages:</span> C, Java, Python, JavaScript, TypeScript, SQL</div>
-      <div><span class="cat">Web &amp; Frameworks:</span> React.js, Next.js, Node.js, Express.js, Flask, Django, MongoDB</div>
-      <div><span class="cat">Concepts:</span> REST APIs, JWT Authentication</div>
-      <div><span class="cat">Tools &amp; Platforms:</span> Git, GitHub, AWS, Appwrite, Vercel, VS Code, IntelliJ IDEA, Jupyter, Postman, Figma, Jira</div>
-      <div><span class="cat">Operating Systems:</span> Windows, Linux (Ubuntu, CentOS), macOS</div>
+      <div><span class="cat">Web Development:</span> React.js, Next.js, Node.js, Express.js, Spring Boot, REST APIs, JWT Authentication</div>
+      <div><span class="cat">Databases:</span> MongoDB, Appwrite, SQL</div>
+      <div><span class="cat">Applied ML &amp; Speech:</span> Faster-Whisper, MarianMT, Voice Activity Detection, Arm NEON optimization</div>
+      <div><span class="cat">Tools &amp; Platforms:</span> Git, GitHub, Vercel, Postman, Jira, VS Code, IntelliJ IDEA, Jupyter, Linux</div>
+      <div><span class="cat">Core CS:</span> Data Structures &amp; Algorithms, Object-Oriented Programming</div>
     </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-title">Achievements</div>
+    <ul class="bullets">
+      <li>Scored 94.8 percentile in JEE Main 2024.</li>
+      <li>Solved 200+ problems on <a href="https://leetcode.com/u/warrior_177/" target="_blank">LeetCode</a> and Codeforces; participated in hackathons and competitive coding contests.</li>
+    </ul>
   </div>
 
   <!-- POR & EXTRACURRICULAR -->
@@ -312,7 +289,7 @@
           <div class="entry-date">Sep 2025</div>
         </div>
         <ul class="bullets">
-          <li>Engineered and deployed the official SGSITS MUN website (<a href="https://sgsitsmun.vercel.app" target="_blank" style="color:var(--accent);text-decoration:none;">sgsitsmun.vercel.app</a>), owning end-to-end deployment and infrastructure.</li>
+          <li>Built and deployed the official SGSITS MUN website (<a href="https://sgsitsmun.in" target="_blank">sgsitsmun.in</a>), owning end-to-end deployment and infrastructure.</li>
         </ul>
       </div>
     </div>
@@ -321,7 +298,7 @@
       <div class="entry">
         <ul class="bullets">
           <li><b>Vice-Captain, Volleyball Team</b> — Interbranch Sports Tournament (2025–Present)</li>
-          <li><b>Volunteer</b> — Dept. of Applied Chemistry (2024–Present)</li>
+          <li><b>Volunteer</b> — Dept. of Applied Chemistry, SGSITS (2024–Present)</li>
         </ul>
       </div>
     </div>
